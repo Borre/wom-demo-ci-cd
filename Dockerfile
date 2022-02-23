@@ -4,8 +4,6 @@ WORKDIR /app
 
 ADD . /app
 
-RUN zypper -n in python3-pip
-
 RUN pip install --trusted-host pypi.python.org flask redis
 
 EXPOSE 80
